@@ -1,0 +1,182 @@
+/* Modern Figma-like styles */
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 480px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.card-section {
+  background: #f9f9fb;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-section.highlight {
+  background: #fff7e6;
+  color: #8c6d1f;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: #00a86b;
+}
+
+.continue-btn {
+  background: #00a86b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 1rem;
+}
+
+.continue-btn:hover {
+  background: #008f5a;
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background: #e6e4f9;
+  color: #5b4fc9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.small {
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.soft-purple {
+  background: #f6f0ff;
+}
+
+.subtle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.tag-box {
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.tag-box.faded {
+  opacity: 0.5;
+}
+
+.slide-wrapper {
+  width: 100%;
+}
+
+.slide-wrapper > .slide {
+  animation: fadeIn 0.3s ease !important;
+}
+
+.card-section.final-btn {
+  background: #f9f9fb;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-section.final-btn:hover {
+  background: #eef3fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+

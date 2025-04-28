@@ -1,0 +1,87 @@
+<head>
+    <meta charset="UTF-8"/>
+    <title>Informed Shopping</title>
+    <link rel="stylesheet" href="./sidepanel.css"/>
+</head>
+<body>
+<div class="tabs">
+    <button class="tab-btn active" data-tab="view-dashboard">Dashboard</button>
+    <button class="tab-btn" data-tab="view-blocked-sites">Blocked Sites</button>
+</div>
+
+
+<div id="view-dashboard" class="view active">
+    <div class="header">
+        <div class="logo">🛍️ Mindful Shopping</div>
+    </div>
+
+
+
+    <h2>Your Impact Dashboard
+        <span class="info-icon" title="This is a summary of all the resources you saved
+    by choosing to not finalize your purchases. 
+    Every time you choose to skip a purchase, the data here updates.">ℹ️</span>
+    </h2>
+    <p class="subtitle">
+        Track your progress toward more sustainable consumption habits.
+    </p>
+
+    <div class="stats-grid">
+        <div class="stat-card purple">
+            <h3>Money Saved</h3>
+            <p class="value">$0.00</p>
+            <p class="description">From skipped impulse purchases</p>
+        </div>
+        <div class="stat-card green">
+            <h3>CO₂ Reduced</h3>
+            <p class="value">0 kg</p>
+            <p class="description"></p>
+        </div>
+        <div class="stat-card blue">
+            <h3>Water Saved</h3>
+            <p class="value">0 L</p>
+            <p class="description"></p>
+        </div>
+        <div class="stat-card yellow">
+            <h3>Purchases Skipped</h3>
+            <p class="value">0</p>
+            <p class="description">In the last 30 days</p>
+        </div>
+    </div>
+
+    <div class="insights">
+        <p>Shopping Insights</p>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <p class="progress-label">70% of considered purchases were skipped <span class="success">Great progress!</span>
+        </p>
+    </div>
+
+    <div class="tip-box">
+        <p class="tip-title">Sustainable Shopping Tip</p>
+        <p class="tip-text">
+            Try the “one in, one out” rule: For every new item you bring home, donate or recycle something you no longer
+            use.
+        </p>
+        <a href="#" class="more-tips">Get more tips</a>
+    </div>
+</div>
+
+<div id="view-blocked-sites" class="view">
+    <div class="header">
+        <div class="logo">🛍️ Mindful Shopping</div>
+    </div>
+
+    <h2>Blocked Sites</h2>
+    <p class="subtitle">Manage your blocked sites list</p>
+
+    <div class="blocked-sites-list">
+        <ul id="blocked-sites-list">
+            <!-- Blocked sites will be dynamically populated here -->
+        </ul>
+    </div>
+
+<script type="module" src="./sidepanel.js"></script>
+
+</body>
